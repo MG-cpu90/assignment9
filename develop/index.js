@@ -92,4 +92,4 @@ async function getGitHubProfileInfo(user, email, repo, title) {
     console.log(data.avatar_url);
 
     server.close();
-}
+  }
