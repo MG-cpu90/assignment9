@@ -1,7 +1,7 @@
 # Title: Assignment 9
 
 ## Description 
-The following application allows users to generate a template readme file using node.js after being prompted for their GitHub username and e-mail address
+The following application allows users to generate a template readme file for a project using node.js after being prompted for their GitHub username and e-mail address
 
 ## Table of Contents
 
@@ -9,7 +9,7 @@ The following application allows users to generate a template readme file using 
 ## Installation
 * Clone the GitHub repository into a folder on your computer by typing "git clone" in your terminal window, followed by a "space" and the pasted [link to the repository](https://github.com/MG-cpu90/assignment9)
 
-* In order to install the packages, it is necessary to open the assignment folder in the terminal window and run the "npm install" command
+* A package.json file is included in the repository, therefore, in order to install the packages needed to run the application, it is necessary to open the assignment folder in the terminal window and run the "npm install" command
 
 
 ## Usage
@@ -17,13 +17,13 @@ The following application allows users to generate a template readme file using 
 
 * You will be prompted with a series of questions to which you must respond in order to generate a ReadMe file for your project on GitHub; these are:
 
-* * Enter your GitHub Username
+ * Enter your GitHub Username
 
-* * Enter your e-mail address
+ * Enter your e-mail address
 
-* * Enter the name of your GitHub repository
+ * Enter the name of your GitHub repository
 
-* * Enter the title of your project
+ * Enter the title of your project
 
 
 ### User Story
