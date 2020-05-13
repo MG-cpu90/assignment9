@@ -1,4 +1,4 @@
-# Title: Assignment 9
+# Title: Assignment 9 - Node.js and ES6+ Homework: Good README Generator
 
 ## Description 
 The following application allows users to generate a template readme file for a project using node.js after being prompted for their GitHub username and e-mail address
