@@ -51,6 +51,29 @@ THEN a README for the repo is generated
 ```
 - - -
 
+## Application Screenshot
+
+![alt text](https://media.giphy.com/media/XZaEKhpR8sVJa4l8yz/giphy.gif "Assignment 9 GIF")
+
+## Accessories Used
+### Languages
+* JavaScript
+* [jQuery](https://jquery.com/)
+* ES6+
+
+### Programs and Applications
+* [Node.js](https://nodejs.org/en/)
+* Git/Terminal
+
+### Packages
+* [Express](https://expressjs.com/)
+* Inquirer
+* AXIOS
+* fs
+
+### Websites
+* [GitHub](https://github.com/) API
+
 ## License
 
 ## Contributing
