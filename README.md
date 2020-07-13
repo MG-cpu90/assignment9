@@ -77,6 +77,8 @@ THEN a README for the repo is generated
 ## License
 
 ## Contributing
+* User GitHub profile username: [MG-cpu90](https://github.com/MG-cpu90)
+* User GitHub email: [massimo@massimoguida.com](mailto:massimo@massimoguida.com)
 
 ## Tests
 
@@ -84,6 +86,6 @@ THEN a README for the repo is generated
 * User GitHub profile picture:
 
 ![alt text](https://avatars3.githubusercontent.com/u/57803405?v=4 "User GitHub Profile Picture")
-* User GitHub profile username: [MG-cpu90](https://github.com/MG-cpu90)
-* User GitHub email: [massimo@massimoguida.com](mailto:massimo@massimoguida.com)
+
+## Links
 * GitHub repository: https://github.com/MG-cpu90/assignment9
