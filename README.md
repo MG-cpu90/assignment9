@@ -37,7 +37,7 @@ SO THAT I can easily put together a good README for a new project
 ```
 - - -
 
-### Acceptnce Criteria
+### Acceptance Criteria
 ```
 GIVEN the developer has a GitHub profile and a repository
 
