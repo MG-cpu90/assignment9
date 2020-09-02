@@ -8,6 +8,7 @@ const PDFDocument = require('pdfkit');
 const hostname = '127.0.0.1';
 const port = 3000;
 
+// Require axios
 const axios = require("axios");
 
 const server = http.createServer((req, res) => {
