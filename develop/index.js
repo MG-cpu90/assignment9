@@ -50,6 +50,7 @@ inquirer.prompt(questions).then(answers => {
 
 });
 
+// Function for retrieving user GitHub Profile information based on their responses
 async function getGitHubProfileInfo(user, email, repo, title) {
 
     const { data } = await axios.get(
