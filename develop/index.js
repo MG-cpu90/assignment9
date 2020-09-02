@@ -66,7 +66,7 @@ async function getGitHubProfileInfo(user, email, repo, title) {
 
     const stringData = JSON.stringify(data, null, '  ');
 
-
+    // Variable containing code for readme template to be generated
     const result = `
 # Title: ${title} 
 ## Description 
