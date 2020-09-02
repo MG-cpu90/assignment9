@@ -1,3 +1,4 @@
+// Variables 
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
@@ -10,49 +11,48 @@ const port = 3000;
 const axios = require("axios");
 
 const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello World');
 });
 
 server.listen(port, hostname, () => {
-  // console.log(`Server running at http://${hostname}:${port}/`);
+    // console.log(`Server running at http://${hostname}:${port}/`);
 });
 
-const questions = [
-  {
-    type: "input",
-    name: "github",
-    message: "Enter your GitHub Username"
-  },
-  {
-    type: "input",
-    name: "email",
-    message: "Enter your e-mail address"
-  },
-  {
-    type: "input",
-    name: "repo",
-    message: "Enter the name of your GitHub repository"
-  },
-  {
-    type: "input",
-    name: "projectTitle",
-    message: "Enter the title of your project"
-  }
+const questions = [{
+        type: "input",
+        name: "github",
+        message: "Enter your GitHub Username"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Enter your e-mail address"
+    },
+    {
+        type: "input",
+        name: "repo",
+        message: "Enter the name of your GitHub repository"
+    },
+    {
+        type: "input",
+        name: "projectTitle",
+        message: "Enter the title of your project"
+    }
 ];
 
-    inquirer.prompt(questions).then(answers => {
-      // call getGitHubProfileInfo function
-        console.log(JSON.stringify(answers, null, '  '));
-        getGitHubProfileInfo(answers.github, answers.email, answers.repo, answers.projectTitle);
+inquirer.prompt(questions).then(answers => {
+    // call getGitHubProfileInfo function
+    console.log(JSON.stringify(answers, null, '  '));
+    getGitHubProfileInfo(answers.github, answers.email, answers.repo, answers.projectTitle);
 
-      });
+});
 
 async function getGitHubProfileInfo(user, email, repo, title) {
 
     const { data } = await axios.get(
-      `https://api.github.com/users/${user}`
+        `https://api.github.com/users/${user}`
     );
 
     data.email = email;
@@ -64,7 +64,7 @@ async function getGitHubProfileInfo(user, email, repo, title) {
     console.log(title);
 
     const stringData = JSON.stringify(data, null, '  ');
-  
+
     const result = `
 # Title: ${title} 
 ## Description 
@@ -85,11 +85,11 @@ async function getGitHubProfileInfo(user, email, repo, title) {
 
     console.log(result);
 
-    fs.writeFile("readmetemplate.md", result, function (err) {
-      if (err) return console.log(err);    
+    fs.writeFile("readmetemplate.md", result, function(err) {
+        if (err) return console.log(err);
     });
 
     console.log(data.avatar_url);
 
     server.close();
-  }
+}
