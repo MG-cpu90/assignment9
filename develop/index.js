@@ -20,6 +20,7 @@ server.listen(port, hostname, () => {
     // console.log(`Server running at http://${hostname}:${port}/`);
 });
 
+// User quesions array
 const questions = [{
         type: "input",
         name: "github",
@@ -64,6 +65,7 @@ async function getGitHubProfileInfo(user, email, repo, title) {
     console.log(title);
 
     const stringData = JSON.stringify(data, null, '  ');
+
 
     const result = `
 # Title: ${title} 
