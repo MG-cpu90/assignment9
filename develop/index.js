@@ -45,6 +45,7 @@ const questions = [{
     }
 ];
 
+// Prompt user for questions using inquirer
 inquirer.prompt(questions).then(answers => {
     // call getGitHubProfileInfo function
     console.log(JSON.stringify(answers, null, '  '));
