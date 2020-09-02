@@ -92,13 +92,16 @@ async function getGitHubProfileInfo(user, email, repo, title) {
 * User GitHub repository: ${repoURL}
 `;
 
+    // Log results
     console.log(result);
 
+    // Write to a readme file
     fs.writeFile("readmetemplate.md", result, function(err) {
         if (err) return console.log(err);
     });
 
     console.log(data.avatar_url);
 
+    // Close server when complete
     server.close();
 }
