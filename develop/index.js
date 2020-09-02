@@ -11,6 +11,7 @@ const port = 3000;
 // Require axios
 const axios = require("axios");
 
+// Code to generate server
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
@@ -18,7 +19,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-    // console.log(`Server running at http://${hostname}:${port}/`);
+    console.log(`Server running at http://${hostname}:${port}/`);
 });
 
 // User quesions array
