@@ -63,12 +63,14 @@ async function getGitHubProfileInfo(user, email, repo, title) {
 
     data.email = email;
 
+    // Generate a URL for their GitHub profile based on the response
     const repoURL = `https://github.com/${user}/${repo}`;
 
-    console.log(data);
-    console.log(repoURL);
-    console.log(title);
+    console.log("Data: ", data);
+    console.log("Reo URL: ", repoURL);
+    console.log("Project title: ", title);
 
+    // Turn the results into a string
     const stringData = JSON.stringify(data, null, '  ');
 
     // Variable containing code for readme template to be generated
